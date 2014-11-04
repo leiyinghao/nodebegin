@@ -12,6 +12,10 @@ function start(){
 	sleep(10000);
         */
 	//return "Hello Start";
+	exec("ls  -alh",function(error,stdout,stderr){
+	  content = stdout;
+	  console.log(content);
+	});	
 	return content;
   }
 
